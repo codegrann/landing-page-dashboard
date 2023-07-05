@@ -1,28 +1,40 @@
 :root {
-    --theme-color:rgb(9, 9, 55);
+    --theme-color:rgb(8, 8, 34);
+    --sub-color:rgb(22, 22, 58);
 }
 
 *{
     box-sizing: border-box;
-}
-body{
     margin: 0;
-    /* background-color: #f01c1c; */
+}
+
+
+#header{
+    height: 8vh;
+    background: var(--theme-color);
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 0.4%;
+}
+#header p{
+    margin-left: 1rem;
 }
 #main{
     width: 100vw;
-    height: 100vh;
+    height: 92vh;
     /* background-color: #f01c1c; */
     display: flex;
 }
 #sidebar{
     width: 20%;
     height: 100%;
-    background: var(--theme-color);
+    background: var(--sub-color);
     /* border: 2px solid black; */
 }
 #content{
     width: 80%;
     height: 100%;
-    background: red;
+    border: 2px solid red;
+    /* background: red; */
 }
