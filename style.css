@@ -1,0 +1,19 @@
+:root {
+    --theme-color:rgb(9, 9, 55);
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+#menu{
+    height: 100vh;
+}
+#submenu{
+    height: 100%;
+}
+#content{
+    height: 100%;
+}
