@@ -7,13 +7,22 @@
 }
 body{
     margin: 0;
+    /* background-color: #f01c1c; */
 }
-#menu{
+#main{
+    width: 100vw;
     height: 100vh;
+    /* background-color: #f01c1c; */
+    display: flex;
 }
-#submenu{
+#sidebar{
+    width: 20%;
     height: 100%;
+    background: var(--theme-color);
+    /* border: 2px solid black; */
 }
 #content{
+    width: 80%;
     height: 100%;
+    background: red;
 }
