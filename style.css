@@ -21,9 +21,8 @@
     margin-left: 1rem;
 }
 #main{
-    width: 100vw;
+    width: 100%;
     height: 92vh;
-    /* background-color: #f01c1c; */
     display: flex;
 }
 #sidebar{
@@ -35,6 +34,6 @@
 #content{
     width: 80%;
     height: 100%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     /* background: red; */
 }
