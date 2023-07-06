@@ -15,10 +15,13 @@ body{
 #header{
     height: 8vh;
     background: var(--theme-color);
+    padding-top: 0.4%;
+}
+#header a{
+    text-decoration: none;
     color: white;
     font-size: 2rem;
     font-weight: 700;
-    padding-top: 0.4%;
 }
 #header p{
     margin-left: 1rem;
