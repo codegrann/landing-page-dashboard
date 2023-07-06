@@ -13,13 +13,14 @@ titles.forEach((title) => {
   title.addEventListener("click", () => {
     let dropdown = title.nextElementSibling;
     let isOpen = dropdown.style.display == "block";
-    
-    titles.forEach((nonSelectedTitle)=>{
-        let closedDropdown=nonSelectedTitle.nextElementSibling;
-        if(closedDropdown!=dropdown){
-            closedDropdown.style.display='none';
-        }
-    })
+
+    // hide unselected dropwons
+    titles.forEach((nonSelectedTitle) => {
+      let closedDropdown = nonSelectedTitle.nextElementSibling;
+      if (closedDropdown != dropdown) {
+        closedDropdown.style.display = "none";
+      }
+    });
 
     dropdown.style.display = isOpen ? "none" : "block";
   });
@@ -28,7 +29,6 @@ titles.forEach((title) => {
 // show each section's content
 subTitles.forEach((subTitle) => {
   subTitle.addEventListener("click", () => {
-    // console.log(subTitle.nextElementSibling)
     display.innerHTML = subTitle.nextElementSibling.textContent;
   });
 });
