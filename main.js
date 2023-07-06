@@ -11,8 +11,12 @@ let subTitles=document.querySelectorAll(".subTitle");
 // toggle the dropdown to show
 titles.forEach((title)=>{
     title.addEventListener('click', ()=>{
-        title.nextElementSibling.style.display='block';
-        // title.nextElementSibling.classList.add('hide');
+        let dropdown=title.nextElementSibling;
+        if(dropdown.style.display=='block'){
+            dropdown.style.display='none';
+        } else{
+            dropdown.style.display='block';
+        }
     })
 })
 
