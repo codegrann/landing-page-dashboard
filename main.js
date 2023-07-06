@@ -1,5 +1,6 @@
 let display=document.querySelector('#display');
 let content=document.querySelectorAll(".content");
+let titles=document.querySelectorAll(".title");
 let subTitles=document.querySelectorAll(".subTitle");
 
 display.addEventListener('click', changeColor);
@@ -20,4 +21,11 @@ content.forEach((el)=>{
     el.addEventListener('click', ()=>{
         // display.innerHTML=el.innerHTML;
     });
+})
+
+titles.forEach((title)=>{
+    title.addEventListener('click', ()=>{
+        title.nextElementSibling.style.display='block';
+        // title.nextElementSibling.classList.add('hide');
+    })
 })

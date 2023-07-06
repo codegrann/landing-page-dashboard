@@ -35,6 +35,9 @@ body{
     color: wheat;
     /* border: 2px solid black; */
 }
+.dropdown{
+    display: none;
+}
 .content{
     display: none;
 }
@@ -43,4 +46,7 @@ body{
     height: 100%;
     /* border: 2px solid red; */
     /* background: red; */
+}
+.show{
+    display: none;
 }
