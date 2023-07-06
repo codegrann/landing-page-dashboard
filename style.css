@@ -67,6 +67,8 @@ body{
 #display{
     width: 80%;
     height: 100%;
+    font-size: 3rem;
+    padding: 3%;
     /* border: 2px solid red; */
     /* background: red; */
 }
