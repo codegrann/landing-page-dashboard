@@ -10,10 +10,9 @@ function changeColor(){
     content.style.backgroundColor='red';
     content.innerHTML=sub.innerHTML;
 }
-function adjust(){
-    content.innerHTML=el;
-}
 
 subb.forEach((el)=>{
-    el.addEventListener('click', adjust);
+    el.addEventListener('click', ()=>{
+        content.innerHTML=el.innerHTML;
+    });
 })
