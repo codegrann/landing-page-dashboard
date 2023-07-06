@@ -10,22 +10,19 @@ function changeColor(){
     display.style.backgroundColor='red';
 }
 
-subTitles.forEach((subTitle)=>{
-    subTitle.addEventListener('click', ()=>{
-        // console.log(subTitle.nextElementSibling)
-        display.innerHTML=subTitle.nextElementSibling.textContent;
-    })
-})
-
-content.forEach((el)=>{
-    el.addEventListener('click', ()=>{
-        // display.innerHTML=el.innerHTML;
-    });
-})
-
+// toggle the dropdown to show
 titles.forEach((title)=>{
     title.addEventListener('click', ()=>{
         title.nextElementSibling.style.display='block';
         // title.nextElementSibling.classList.add('hide');
+    })
+})
+
+
+// show each section's content
+subTitles.forEach((subTitle)=>{
+    subTitle.addEventListener('click', ()=>{
+        // console.log(subTitle.nextElementSibling)
+        display.innerHTML=subTitle.nextElementSibling.textContent;
     })
 })
