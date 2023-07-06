@@ -1,16 +1,23 @@
 let display=document.querySelector('#display');
-let sub=document.querySelector("#sub");
-let subb=document.querySelectorAll(".subb");
+let content=document.querySelectorAll(".content");
+let subTitles=document.querySelectorAll(".subTitle");
 
 display.addEventListener('click', changeColor);
+console.log(subTitles.nextElementSibling)
 
 function changeColor(){
     display.style.backgroundColor='red';
-    display.innerHTML=sub.innerHTML;
 }
 
-subb.forEach((el)=>{
+subTitles.forEach((subTitle)=>{
+    subTitle.addEventListener('click', ()=>{
+        // console.log(subTitle.nextElementSibling)
+        display.innerHTML=subTitle.nextElementSibling.textContent;
+    })
+})
+
+content.forEach((el)=>{
     el.addEventListener('click', ()=>{
-        display.innerHTML=el.innerHTML;
+        // display.innerHTML=el.innerHTML;
     });
 })
