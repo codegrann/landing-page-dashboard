@@ -1,18 +1,16 @@
-let content=document.querySelector('#content');
+let display=document.querySelector('#display');
 let sub=document.querySelector("#sub");
 let subb=document.querySelectorAll(".subb");
 
-content.addEventListener('click', changeColor);
-
-console.log(subb)
+display.addEventListener('click', changeColor);
 
 function changeColor(){
-    content.style.backgroundColor='red';
-    content.innerHTML=sub.innerHTML;
+    display.style.backgroundColor='red';
+    display.innerHTML=sub.innerHTML;
 }
 
 subb.forEach((el)=>{
     el.addEventListener('click', ()=>{
-        content.innerHTML=el.innerHTML;
+        display.innerHTML=el.innerHTML;
     });
 })
