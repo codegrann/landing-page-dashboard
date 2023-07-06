@@ -3,12 +3,10 @@ let content=document.querySelectorAll(".content");
 let titles=document.querySelectorAll(".title");
 let subTitles=document.querySelectorAll(".subTitle");
 
-display.addEventListener('click', changeColor);
-console.log(subTitles.nextElementSibling)
-
-function changeColor(){
-    display.style.backgroundColor='red';
-}
+// display.addEventListener('click', changeColor);
+// function changeColor(){
+    // display.style.backgroundColor='red';
+// }
 
 // toggle the dropdown to show
 titles.forEach((title)=>{
